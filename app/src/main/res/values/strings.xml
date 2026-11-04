@@ -34,7 +34,7 @@
     <string name="menu_share">Share</string>
     <string name="menu_about">About</string>
     <string name="share_subject">Check out FareLug</string>
-    <string name="share_message">Manage and calculate your flight excess baggage fees easily with FareLug app! Check out project at: https://github.com/yourusername/ExcessBaggageFee</string>
+    <string name="share_message">Manage and calculate your flight excess baggage fees easily with FareLug app! Check out project at: https://github.com/dausbaehuhe/ICT602_IndividualAssignment_MuhammadFirdausbinOthman_2025483046</string>
 
     <!-- About Page Content -->
     <string name="about_app_title">FareLug</string>
@@ -51,6 +51,6 @@
     <string name="label_course">Course</string>
     <string name="val_course">ICT602 Mobile Technology (CS251)</string>
     <string name="copyright_text">© 2026 FareLug. All rights reserved.</string>
-    <string name="github_url">https://github.com/yourusername/ExcessBaggageFee</string>
+    <string name="github_url">https://github.com/dausbaehuhe/ICT602_IndividualAssignment_MuhammadFirdausbinOthman_2025483046</string>
     <string name="btn_open_github">Visit Project GitHub</string>
 </resources>
