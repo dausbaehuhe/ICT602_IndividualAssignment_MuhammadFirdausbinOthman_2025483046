@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">FareLug</string>
+    <string name="title_activity_about">About FareLug</string>
+
+    <!-- Instructions & Notice -->
+    <string name="instruction_title">Baggage Allowance &amp; Rates</string>
+    <string name="instruction_details">• Economy Class: 20 kg allowance (Rate: RM 15 / kg)\n• Business Class: 40 kg allowance (Rate: RM 12 / kg)\n• Service Tax: 8% applied on excess baggage charge\n• Excess weight cannot be negative.</string>
+
+    <!-- UI Strings -->
+    <string name="hero_title">FareLug</string>
+    <string name="hero_subtitle">Calculate baggage fees &amp; tax instantly</string>
+    <string name="input_card_title">Enter Baggage Details</string>
+    <string name="aviation_icon_desc">FareLug Icon</string>
+
+    <!-- Inputs -->
+    <string name="baggage_weight_label">Baggage Weight (kg)</string>
+    <string name="baggage_weight_hint">Enter weight in kg (e.g., 25.5)</string>
+    <string name="ticket_class_label">Ticket Class &amp; Rate</string>
+    <string name="radio_economy">Economy (20 kg • RM 15/kg)</string>
+    <string name="radio_business">Business (40 kg • RM 12/kg)</string>
+
+    <!-- Buttons -->
+    <string name="btn_calculate">Calculate Fee</string>
+    <string name="btn_reset">Reset</string>
+    <string name="btn_about">About FareLug</string>
+
+    <!-- Results -->
+    <string name="results_title">Calculation Results</string>
+    <string name="label_excess_weight">Excess Baggage Weight:</string>
+    <string name="label_excess_charge">Excess Baggage Charge:</string>
+    <string name="label_total_payable">Total Amount Payable (incl. 8% tax):</string>
+
+    <!-- Menu -->
+    <string name="menu_share">Share</string>
+    <string name="menu_about">About</string>
+    <string name="share_subject">Check out FareLug</string>
+    <string name="share_message">Manage and calculate your flight excess baggage fees easily with FareLug app! Check out project at: https://github.com/yourusername/ExcessBaggageFee</string>
+
+    <!-- About Page Content -->
+    <string name="about_app_title">FareLug</string>
+    <string name="about_version">Version 1.0</string>
+    <string name="about_description">Welcome to <b>FareLug</b>, your smart travel companion for estimating excess baggage fees!\n\nFareLug is a mobile application designed to help travellers calculate their estimated excess baggage charges before arriving at the airport. Users can enter their luggage weight, select an airline, and check the estimated additional fees based on the airline\'s baggage allowance and fee rates.\n\nWith FareLug, travellers can plan their luggage more effectively, manage their travel expenses, and avoid unexpected baggage charges. Our application makes excess baggage fee estimation simple, convenient, and accessible anytime, anywhere.\n\n<b>Travel Smart. Pack Smart. Fly with FareLug!</b></string>
+    <!-- Developer Details -->
+    <string name="developer_details_header">Developer Profile</string>
+    <string name="label_developer_name">Developer Name</string>
+    <string name="val_developer_name">MUHAMMAD FIRDAUS BIN OTHMAN</string>
+    <string name="label_student_number">Student Number</string>
+    <string name="val_student_number">2025483046</string>
+    <string name="label_class">Class</string>
+    <string name="val_class">RCS2515B</string>
+    <string name="label_course">Course</string>
+    <string name="val_course">ICT602 Mobile Technology (CS251)</string>
+    <string name="copyright_text">© 2026 FareLug. All rights reserved.</string>
+    <string name="github_url">https://github.com/yourusername/ExcessBaggageFee</string>
+    <string name="btn_open_github">Visit Project GitHub</string>
+</resources>
