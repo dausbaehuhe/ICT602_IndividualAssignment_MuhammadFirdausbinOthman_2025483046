@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Apply Window Insets for top status bar & camera cutout space
         View mainView = findViewById(R.id.main);
         if (mainView != null) {
             ViewCompat.setOnApplyWindowInsetsListener(mainView, (v, insets) -> {
@@ -40,14 +39,12 @@ public class MainActivity extends AppCompatActivity {
             });
         }
 
-        // Header Action Buttons inside Hero Card
         ImageButton btnShareHeader = findViewById(R.id.btnShareHeader);
 
         if (btnShareHeader != null) {
             btnShareHeader.setOnClickListener(v -> shareApp());
         }
 
-        // Initialize UI components
         etBaggageWeight = findViewById(R.id.etBaggageWeight);
         etBaggageWeight.setPrivateImeOptions("nm,com.google.android.inputmethod.latin.noSuggestions");
         etExcessRate = findViewById(R.id.etExcessRate);
@@ -125,13 +122,11 @@ public class MainActivity extends AppCompatActivity {
         
         double allowance = isBusiness ? 40.0 : 20.0;
 
-        // Calculations
         double excessWeight = Math.max(0.0, weight - allowance);
         double excessCharge = excessWeight * rate;
         double serviceTax = 0.08 * excessCharge;
         double totalPayable = excessCharge + serviceTax;
 
-        // Display results
         tvExcessWeight.setText(String.format(Locale.getDefault(), "%.2f kg", excessWeight));
         tvExcessCharge.setText(String.format(Locale.getDefault(), "RM %.2f", excessCharge));
         tvTotalPayable.setText(String.format(Locale.getDefault(), "RM %.2f", totalPayable));
@@ -160,4 +155,3 @@ public class MainActivity extends AppCompatActivity {
         startActivity(Intent.createChooser(shareIntent, "Share via"));
     }
 }
-
