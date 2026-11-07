@@ -131,6 +131,31 @@
 
                     </com.google.android.material.textfield.TextInputLayout>
 
+                    <!-- Excess Rate Input -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                        android:hint="@string/excess_rate_label"
+                        app:boxCornerRadiusTopStart="12dp"
+                        app:boxCornerRadiusTopEnd="12dp"
+                        app:boxCornerRadiusBottomStart="12dp"
+                        app:boxCornerRadiusBottomEnd="12dp"
+                        app:prefixText="RM "
+                        app:suffixText="/ kg">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etExcessRate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:privateImeOptions="nm,com.google.android.inputmethod.latin.noSuggestions"
+                            android:imeOptions="actionDone|flagNoExtractUi"
+                            android:maxLines="1" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
                     <!-- Ticket Class Selection -->
                     <TextView
                         android:layout_width="wrap_content"

@@ -3,8 +3,8 @@
     <string name="title_activity_about">About FareLug</string>
 
     <!-- Instructions & Notice -->
-    <string name="instruction_title">Baggage Allowance &amp; Rates</string>
-    <string name="instruction_details">• Economy Class: 20 kg allowance (Rate: RM 15 / kg)\n• Business Class: 40 kg allowance (Rate: RM 12 / kg)\n• Service Tax: 8% applied on excess baggage charge\n• Excess weight cannot be negative.</string>
+    <string name="instruction_title">Baggage Allowance &amp; Rules</string>
+    <string name="instruction_details">• Economy Class: 20 kg allowance\n• Business Class: 40 kg allowance\n• Excess Rate: User-entered (RM / kg)\n• Service Tax: 8% applied on excess baggage charge\n• Excess weight cannot be negative.</string>
 
     <!-- UI Strings -->
     <string name="hero_title">FareLug</string>
@@ -14,8 +14,9 @@
 
     <!-- Inputs -->
     <string name="baggage_weight_label">Baggage Weight (kg)</string>
+    <string name="excess_rate_label">Excess Baggage Rate (RM / kg)</string>
     <string name="baggage_weight_hint">Enter weight in kg (e.g., 25.5)</string>
-    <string name="ticket_class_label">Ticket Class &amp; Rate</string>
+    <string name="ticket_class_label">Ticket Class</string>
     <string name="radio_economy">Economy (20 kg • RM 15/kg)</string>
     <string name="radio_business">Business (40 kg • RM 12/kg)</string>
 

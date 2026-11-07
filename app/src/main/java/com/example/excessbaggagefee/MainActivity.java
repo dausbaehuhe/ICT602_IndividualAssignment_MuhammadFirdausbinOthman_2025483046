@@ -20,7 +20,7 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextInputEditText etBaggageWeight;
+    private TextInputEditText etBaggageWeight, etExcessRate;
     private RadioGroup rgTicketClass;
     private TextView tvExcessWeight, tvExcessCharge, tvTotalPayable;
     private Button btnCalculate, btnReset, btnAbout;
@@ -50,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
         // Initialize UI components
         etBaggageWeight = findViewById(R.id.etBaggageWeight);
         etBaggageWeight.setPrivateImeOptions("nm,com.google.android.inputmethod.latin.noSuggestions");
+        etExcessRate = findViewById(R.id.etExcessRate);
+        etExcessRate.setPrivateImeOptions("nm,com.google.android.inputmethod.latin.noSuggestions");
         rgTicketClass = findViewById(R.id.rgTicketClass);
         tvExcessWeight = findViewById(R.id.tvExcessWeight);
         tvExcessCharge = findViewById(R.id.tvExcessCharge);
@@ -90,6 +92,29 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
+        String rateStr = etExcessRate.getText() != null ? etExcessRate.getText().toString().trim() : "";
+
+        if (rateStr.isEmpty()) {
+            etExcessRate.setError("Please enter excess baggage rate per kg");
+            etExcessRate.requestFocus();
+            return;
+        }
+
+        double rate;
+        try {
+            rate = Double.parseDouble(rateStr);
+        } catch (NumberFormatException e) {
+            etExcessRate.setError("Invalid rate format");
+            etExcessRate.requestFocus();
+            return;
+        }
+
+        if (rate < 0) {
+            etExcessRate.setError("Rate cannot be negative");
+            etExcessRate.requestFocus();
+            return;
+        }
+
         int selectedId = rgTicketClass.getCheckedRadioButtonId();
         if (selectedId == -1) {
             Toast.makeText(this, "Please select a ticket class (Economy or Business)", Toast.LENGTH_SHORT).show();
@@ -99,7 +124,6 @@ public class MainActivity extends AppCompatActivity {
         boolean isBusiness = (selectedId == R.id.rbBusiness);
         
         double allowance = isBusiness ? 40.0 : 20.0;
-        double rate = isBusiness ? 12.0 : 15.0;
 
         // Calculations
         double excessWeight = Math.max(0.0, weight - allowance);
@@ -117,12 +141,15 @@ public class MainActivity extends AppCompatActivity {
 
     private void resetFields() {
         etBaggageWeight.setText("");
+        etExcessRate.setText("");
         rgTicketClass.clearCheck();
         tvExcessWeight.setText("0.00 kg");
         tvExcessCharge.setText("RM 0.00");
         tvTotalPayable.setText("RM 0.00");
         etBaggageWeight.setError(null);
+        etExcessRate.setError(null);
         etBaggageWeight.clearFocus();
+        etExcessRate.clearFocus();
     }
 
     private void shareApp() {
