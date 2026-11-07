@@ -17,8 +17,8 @@
     <string name="excess_rate_label">Excess Baggage Rate (RM / kg)</string>
     <string name="baggage_weight_hint">Enter weight in kg (e.g., 25.5)</string>
     <string name="ticket_class_label">Ticket Class</string>
-    <string name="radio_economy">Economy (20 kg • RM 15/kg)</string>
-    <string name="radio_business">Business (40 kg • RM 12/kg)</string>
+    <string name="radio_economy">Economy (20 kg)</string>
+    <string name="radio_business">Business (40 kg)</string>
 
     <!-- Buttons -->
     <string name="btn_calculate">Calculate Fee</string>
